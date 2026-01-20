@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency in Australia | Regulations & Opportunities</title>
+    <!-- Tailwind CSS CDN (无需本地安装，直接使用) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome (图标库) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- 自定义Tailwind配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0066CC', // 澳大利亚主题蓝
+                        secondary: '#FFCC00', // 澳大利亚主题黄
+                        dark: '#1A1A1A',
+                        light: '#F5F7FA'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- 自定义样式 -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .section-padding {
+                padding: clamp(3rem, 8vw, 6rem) 0;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-light antialiased">
+    <!-- 导航栏 -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="flex items-center gap-2">
+                    <i class="fa-brands fa-bitcoin text-primary text-2xl"></i>
+                    <span class="font-bold text-xl">CryptoAU</span>
+                </a>
+                
+                <!-- 桌面端导航 -->
+                <nav class="hidden md:flex gap-8">
+                    <a href="#overview" class="text-dark/80 hover:text-primary transition">Overview</a>
+                    <a href="#regulation" class="text-dark/80 hover:text-primary transition">Regulation</a>
+                    <a href="#adoption" class="text-dark/80 hover:text-primary transition">Adoption</a>
+                    <a href="#contact" class="text-dark/80 hover:text-primary transition">Contact</a>
+                </nav>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="menuBtn" class="md:hidden text-dark text-xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white shadow-md">
+            <div class="container mx-auto px-4 py-4 flex flex-col gap-4">
+                <a href="#overview" class="text-dark/80 hover:text-primary transition py-2">Overview</a>
+                <a href="#regulation" class="text-dark/80 hover:text-primary transition py-2">Regulation</a>
+                <a href="#adoption" class="text-dark/80 hover:text-primary transition py-2">Adoption</a>
+                <a href="#contact" class="text-dark/80 hover:text-primary transition py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区 - 修改了按钮部分 -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-shadow mb-6">
+                    Cryptocurrency in <span class="text-primary">Australia</span>
+                </h1>
+                <p class="text-lg text-dark/70 mb-8">
+                    Navigating the regulatory landscape, adoption trends, and investment opportunities 
+                    of digital assets in the Australian market.
+                </p>
+                <!-- 替换为单个WhatsApp联系按钮 -->
+                <div class="flex justify-center">
+                    <a href="https://wa.me/你的电话号码" target="_blank" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Contact me on WhatsApp for inquiries
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 概述部分 -->
+    <section id="overview" class="section-padding bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto mb-12 text-center">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">Australian Crypto Landscape</h2>
+                <p class="text-dark/70">
+                    Australia has emerged as one of the most progressive markets for cryptocurrency 
+                    adoption and regulation in the Asia-Pacific region.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 卡片1 -->
+                <div class="bg-light rounded-xl p-6 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-chart-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Market Growth</h3>
+                    <p class="text-dark/70">
+                        Over 20% of Australian adults own cryptocurrency, with a market cap exceeding 
+                        AUD $50 billion as of 2025. Bitcoin and Ethereum remain the most popular assets.
+                    </p>
+                </div>
+
+                <!-- 卡片2 -->
+                <div class="bg-light rounded-xl p-6 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-store text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Merchant Adoption</h3>
+                    <p class="text-dark/70">
+                        Major retailers, travel agencies, and service providers across Australia now accept 
+                        crypto payments, including Bitcoin, Ethereum, and stablecoins like USDC.
+                    </p>
+                </div>
+
+                <!-- 卡片3 -->
+                <div class="bg-light rounded-xl p-6 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-arrow-trend-up text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Institutional Interest</h3>
+                    <p class="text-dark/70">
+                        Australian banks, superannuation funds, and investment firms are increasingly 
+                        offering crypto-related products and services to their clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 监管部分 -->
+    <section id="regulation" class="section-padding bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto mb-12 text-center">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">Regulatory Framework</h2>
+                <p class="text-dark/70">
+                    Australia has established a clear and comprehensive regulatory regime for digital assets.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-primary"></i>
+                        Regulatory Bodies
+                    </h3>
+                    <ul class="space-y-2 text-dark/70">
+                        <li><strong>ASIC (ASIC):</strong> Regulates crypto exchanges and financial services</li>
+                        <li><strong>ATO (ATO):</strong> Oversees tax treatment of crypto transactions</li>
+                        <li><strong>AUSTRAC:</strong> Enforces anti-money laundering (AML) compliance</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-file-contract text-primary"></i>
+                        Key Regulations
+                    </h3>
+                    <ul class="space-y-2 text-dark/70">
+                        <li>Mandatory licensing for crypto exchanges (since 2021)</li>
+                        <li>Crypto treated as property for tax purposes</li>
+                        <li>AML/CTF obligations for all crypto service providers</li>
+                        <li>Clear guidelines for stablecoin issuances (2024 update)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 应用场景部分 -->
+    <section id="adoption" class="section-padding bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto mb-12 text-center">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">Real-World Adoption</h2>
+                <p class="text-dark/70">
+                    Cryptocurrency is no longer just an investment – it's a practical payment method across Australia.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-car text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Automotive</h4>
+                    <p class="text-sm text-dark/70">Car dealers accepting crypto for new & used vehicles</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-utensils text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Hospitality</h4>
+                    <p class="text-sm text-dark/70">Hotels, restaurants & cafes across major cities</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-plane text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Travel</h4>
+                    <p class="text-sm text-dark/70">Flight bookings & travel packages</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-home text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Real Estate</h4>
+                    <p class="text-sm text-dark/70">Property purchases & rental payments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 简化的联系区域 - 仅保留WhatsApp按钮 -->
+    <section id="contact" class="section-padding bg-primary/5">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-md p-8 text-center">
+                <!-- 简化后的标题 -->
+                <h2 class="text-2xl font-bold mb-8 text-center">Interested? Contact me on WhatsApp</h2>
+                
+                <!-- 仅保留WhatsApp按钮，放大样式提升视觉焦点 -->
+                <a href="https://wa.me/你的电话号码" target="_blank" class="inline-block bg-primary text-white px-10 py-4 rounded-lg font-medium hover:bg-primary/90 transition text-lg flex items-center justify-center gap-2 mx-auto">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    Contact me via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-brands fa-bitcoin text-secondary text-2xl"></i>
+                        <span class="font-bold text-xl">CryptoAU</span>
+                    </div>
+                    <p class="text-white/70 mb-4">
+                        Your trusted source for cryptocurrency information and guidance in Australia.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white/70 hover:text-secondary transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white/70 hover:text-secondary transition"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white/70 hover:text-secondary transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white/70 hover:text-secondary transition"><i class="fa-brands fa-instagram"></i></a>
+                        <!-- 添加WhatsApp社交媒体图标 -->
+                        <a href="https://wa.me/你的电话号码" target="_blank" class="text-white/70 hover:text-secondary transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#overview" class="text-white/70 hover:text-secondary transition">Overview</a></li>
+                        <li><a href="#regulation" class="text-white/70 hover:text-secondary transition">Regulation</a></li>
+                        <li><a href="#adoption" class="text-white/70 hover:text-secondary transition">Adoption</a></li>
+                        <li><a href="#contact" class="text-white/70 hover:text-secondary transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white/70 hover:text-secondary transition">ATO Crypto Tax Guide</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-secondary transition">ASIC Regulatory Updates</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-secondary transition">Crypto Exchange Directory</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-secondary transition">Market Reports</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-white/70">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <span>Sydney, NSW 2000, Australia</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-white/70">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@cryptoau.com.au</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-white/70">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>+61 (02) 1234 5678</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 mt-8 pt-8 text-center text-white/50 text-sm">
+                <p>&copy; 2025 CryptoAU. All rights reserved. Cryptocurrency investment involves risk.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 移动端菜单切换
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // 切换图标
+            const icon = menuBtn.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // 关闭移动端菜单
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    menuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+                }
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>
